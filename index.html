@@ -5,18 +5,34 @@
     <title></title>
   </head>
   <body>
-    <input class="radio" type="radio">a</input>
+    <input class="radio" type="radio">a</input><br />
+    <select class="select">
+      <option label="a">a</option>
+      <option label="a">a</option>
+      <option label="a">a</option>
+    </select>
     <style media="screen">
       .radio{
         -webkit-appearance: none;
         appearance: none;
       }
-      .radio::-ms-expand{
+      select.radio::-ms-expand{
         display:none;
       }
-      .radio::-ms-check{
+      input.radio::-ms-check{
         display:none;
       }
+      .select{
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      select.select::-ms-expand{
+        display:none;
+      }
+      input.select::-ms-check{
+        display:none;
+      }
+
     </style>
   </body>
 </html>
